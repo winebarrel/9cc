@@ -9,3 +9,8 @@ $(OBJS): chibicc.h
 
 test: chibicc
 	./test.sh
+
+clean:
+	rm -f chibicc *.o *~ tmp* *.orig *.rej
+
+.PHONY: test clean
